@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comedy Works</title>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/solar/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	td, th {text-align: center;}
+</style>
+<body>
+
+<div class="container">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3 text-center">Comedy Works</h1>
+    <p class="lead text-center">November 21st</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header"><h3>People Invited</h3></div>
+  <div class="card-body">
+    	<table class="table">
+		  <thead>
+		    <tr>
+		      <th>Name</th>
+		      <th>Dinner at 5:00</th>
+		      <th>Show at 7:30</th>
+					<th>Both</th>
+					<th>You Owe</th>
+		    </tr>
+		  </thead>
+		  <tbody id="table-body">
+		    <!-- <tr>
+		      <td class="table-name"></td>
+		      <td class="table-role"></td>
+		      <td class="table-start-date"></td>
+		      <td class="table months-worked"></td>
+		      <td class="table-monthly-rate"></td>
+		      <td class="table-total-billed"></td>
+		    </tr> -->
+		  </tbody>
+		</table>
+  </div>
+</div>
+
+<div class="card">
+	<div class="card-header"><h3>Add Yourself</h3></div>
+	<div class="card-body">
+		<form>
+		 <div class="form-group">
+		    <label for="name">Name</label>
+		    <input type="text" class="form-control" id="name" placeholder="Enter Name">
+		 </div>
+		 <div class="form-group">
+		    <label for="destination">Dinner?</label>
+		    <input type="text" class="form-control" id="dinner" placeholder="Type YES for just the dinner">
+		 </div>
+		 <div class="form-group">
+		    <label for="first-train-time">Show?</label>
+		    <input type="text" class="form-control" id="show" placeholder="Type YES for just the show">
+		 </div>
+		 <div class="form-group">
+		    <label for="frequency">Both?</label>
+		    <input type="text" class="form-control" id="both" placeholder="Type YES for both">
+		 </div>
+		    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+		</form>
+		
+
+	</div>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script type="text/javascript" src="assets/javascript/trains.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+
+</body>
+</html>
